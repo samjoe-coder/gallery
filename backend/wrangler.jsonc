@@ -10,6 +10,11 @@
 	"observability": {
 		"enabled": true
 	}
+	,
+	// For local dev you can set a sample token here; prefer `wrangler secret put API_TOKEN` for real deployments
+	"vars": {
+		"API_TOKEN": "dev-token"
+	}
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
