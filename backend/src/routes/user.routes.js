@@ -5,7 +5,7 @@ const userRouter = new Hono()
 userRouter.get('/', async (c) => {
     let { results } = await c.env.DB.prepare(
         "SELECT * FROM users",
-      ).run();
+      ).all();
     return c.json({ message: 'GET all users', data: results });
 })
 
