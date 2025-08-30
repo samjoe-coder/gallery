@@ -14,13 +14,7 @@
 	// For local dev you can set a sample token here; prefer `wrangler secret put API_TOKEN` for real deployments
 	"vars": {
 		"API_TOKEN": "dev-token"
-	},
-
-    "d1_databases": [{
-        "binding": "DB",
-        "database_name": "gallery",
-        "database_id": "19754f67-1b2d-4354-998d-0bd998f52434"
-    }]
+	}
 
 	/**
 	 * Smart Placement
