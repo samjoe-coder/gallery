@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
-import { getAllUsers, getUserById, createUser } from '../services/user.service';
-import { successResponse, errorResponse } from '../utils/response';
+import { getUserById, createUser } from '../services/user.service';
+import { successResponse, errorResponse } from '../utils/response.util';
 
 const userRouter = new Hono()
 

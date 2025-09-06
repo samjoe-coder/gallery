@@ -1,10 +1,10 @@
-import { hashPassword } from "../utils/hash.util";
+import { hashPassword } from "../utils/password.util";
 
 export async function getUserByEmail(db, email) {
   try {
     const result = await db
       .prepare(
-        `SELECT id, email, username, avatar_url
+        `SELECT id, email, username, password, avatar_url
          FROM users
          WHERE email = ?`
       )
